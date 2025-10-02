@@ -6,7 +6,7 @@ void main()  {
   var a = double.parse(stdin.readLineSync()!);
 
   stdout.write('Entre com o valor de B: ');
-  var B = double.parse(stdin.readLineSync()!);
+  var b = double.parse(stdin.readLineSync()!);
 
   // Condicional simples com else opcional
   print('Testando se "a" é maior que "b"');
@@ -18,7 +18,25 @@ void main()  {
 
   print('Testando se "john" é diferente "Jane"');
   // Comparação de strngs
-  String nme = 'john';
+  String nome = 'john';
 
-  if (nome != 'Jane')
+  if (nome != 'Jane') {
+    print('Os nomes são diferentes!');
+  } else {
+    print('Os nomes são iguais');
+  }
+
+  // Condicionais encadeadas: avaliando a média de uma aluno
+  double media = 4;
+  print('Testando uma Média declarada ( ${media} )');
+
+  if (media < 0 || media > 10) {
+    print('Média inválida! Digite um valor entre 0 e 10.');
+  } else if (media >= 7.5) {
+    print('O aluno foi aprovado!');
+  } else if (media >= 5) {
+    print('O aluno está e, recuperação!');
+  } else {
+    print('O aluno foi reprovado!');
+  }
 }

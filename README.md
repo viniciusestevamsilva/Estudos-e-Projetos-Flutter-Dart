@@ -17,6 +17,8 @@ Este repósitorio será de usos para que eu aplique, e estude minhas habilidades
 
 ✔️Início ➖ (29/09/2025)
 
+✔️Estudo de Variáveis ➖ (29/09/2025)
+
 ✔️Null safety ➖ (30/09/2025)
 
 ✔️Entrada de dados ➖ (30/09/2025)
@@ -27,11 +29,9 @@ Este repósitorio será de usos para que eu aplique, e estude minhas habilidades
 
 ✔️Operadores Lógicos ➖ (30/09/2025)
 
-❌Estudo de Variáveis
+✔️Condicionais IF Else ➖ (01/10/2025)
 
-❌Condicionais IF Else
-
-❌Condicional Switch case
+✔️Condicional Switch case ➖ (01/10/2025)
 
 ❌Desenvolvimento Móvel: Atividade 01
 
