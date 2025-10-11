@@ -1,13 +1,12 @@
 import 'dart:io';
 
 void main() {
-
   print('-' * 40);
 
   stdout.write('Digite um número: ');
   String? entrada = stdin.readLineSync();
 
-  if (entrada?.trim().isNotEmpty == true) {
+  if (entrada?.isNotEmpty == true) {
     int? numero = int.tryParse(entrada!);
 
     if (numero != null) {
