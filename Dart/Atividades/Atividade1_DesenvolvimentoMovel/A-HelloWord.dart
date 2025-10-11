@@ -1,6 +1,6 @@
 import 'dart:io';
 void main() {
-  print('-' * 50);
+  print('-' * 40);
   stdout.write('Digite a frase: ');
 
   String? palavra = stdin.readLineSync();
@@ -9,8 +9,8 @@ void main() {
     print('$palavra');
 
   } else {
-    print('-' * 50);
+    print('-' * 40);
     print('Nada foi impresso, Digite algo para printar!');
   }
-  print('-' * 50);
+  print('-' * 40);
 }

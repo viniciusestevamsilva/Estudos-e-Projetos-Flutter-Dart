@@ -18,9 +18,9 @@ void main () {
 
     print('Você tem $Suaidade anos.');
   } else {
-    print('-' * 50);
+    print('-' * 40);
     print('ERRO');
-    print('-' * 50);
+    print('-' * 40);
     print('Nada foi impresso, Digite algo válido!');
   }
 }

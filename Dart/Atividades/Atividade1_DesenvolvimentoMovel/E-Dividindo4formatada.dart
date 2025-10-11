@@ -27,9 +27,10 @@ void main() {
   }
 
   if (num2 == 0) {
-    print('-' * 50);
-    print('ERRO: Dividir por zero não é permitida.');
-    print('-' * 50);
+    print('-' * 40);
+    print('ERRO');
+    print('Nada foi impresso, Digite algo válido!');
+    print('-' * 40);
     return;
   }
 

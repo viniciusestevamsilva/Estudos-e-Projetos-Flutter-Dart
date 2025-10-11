@@ -19,19 +19,19 @@ void main() {
     int restoDivisao = valor1 % valor2;
     int divInteira = valor1 ~/ valor2;
 
-    print('-' * 50);
+    print('-' * 40);
     print('A soma de $valor1 + $valor2 = $soma');
     print('A subtração de $valor1 - $valor2 = $subtracao');
     print('A multiplicação de $valor1 * $valor2 = $produto');
     print('A divisão de $valor1 / $valor2 = ${divisao.toStringAsFixed(2)}');
     print('A divisão inteira de $valor1 ~/ $valor2 = $divInteira');
     print('O resto da divisão de $valor1 % $valor2 = $restoDivisao');
-    print('-' * 50);
+    print('-' * 40);
 
   } else {
-    print('-' * 50);
+    print('-' * 40);
     print('ERRO');
-    print('-' * 50);
+    print('-' * 40);
     print('Nada foi impresso, Digite algo válido!');
   }
 }

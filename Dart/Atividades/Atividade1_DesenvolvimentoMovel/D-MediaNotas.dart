@@ -13,11 +13,17 @@ void main() {
       if (nota != null) {
         soma += nota;
       } else {
-        print('Nota inválida. Tente novamente.');
+        print('-' * 40);
+        print('ERRO');
+        print('Nada foi impresso, Digite algo válido!');
+        print('-' * 40);
         i--;
       }
     } else {
-      print('Entrada vazia. Tente novamente.');
+      print('-' * 40);
+      print('ERRO');
+      print('Nada foi impresso, Digite algo válido!');
+      print('-' * 40);
       i--;
     }
   }
