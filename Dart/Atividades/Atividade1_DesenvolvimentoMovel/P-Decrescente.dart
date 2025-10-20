@@ -4,15 +4,13 @@ void main() {
   print('-' * 40);
   print('Digite 3 números inteiros e diferentes:');
 
-  // PRIMEIRO NÚMERO
   stdout.write('Primeiro número: ');
   String? entrada1 = stdin.readLineSync();
 
-  // SEGUNDO NÚMERO
   stdout.write('Segundo número: ');
   String? entrada2 = stdin.readLineSync();
 
-  // TERCEIRO NÚMERO
+ 
   stdout.write('Terceiro número: ');
   String? entrada3 = stdin.readLineSync();
 
