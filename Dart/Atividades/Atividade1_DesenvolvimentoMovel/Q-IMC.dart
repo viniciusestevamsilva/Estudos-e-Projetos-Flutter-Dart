@@ -3,8 +3,6 @@ import 'dart:io';
 void main() {
 
   print('-' * 40);
-  print('CALCULADORA DE IMC');
-  print('-' * 40);
 
   stdout.write('Digite seu nome: ');
   String? nome = stdin.readLineSync();
