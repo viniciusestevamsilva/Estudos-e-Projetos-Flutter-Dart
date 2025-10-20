@@ -3,8 +3,6 @@ import 'dart:io';
 void main() {
 
   print('-' * 40);
-  print('CALCULADORA DE ÁREAS GEOMÉTRICAS');
-  print('-' * 40);
 
   stdout.write('Digite o lado do quadrado: ');
 
