@@ -3,59 +3,74 @@ import 'dart:io';
 void main() {
 
   print('-' * 40);
-  print('1 - Celsius para Fahrenheit');
-  print('2 - Fahrenheit para Celsius');
+  print('R - Convertor de temperaturas');
   print('-' * 40);
 
-  stdout.write('Escolha o tipo (1 ou 2): ');
-  String? opcaoStr = stdin.readLineSync();
+  while(true){
 
-  if (opcaoStr != null && opcaoStr.isNotEmpty) {
-    int opcao = int.parse(opcaoStr);
+    print('-' * 40);
+    print('1 - Celsius para Fahrenheit');
+    print('2 - Fahrenheit para Celsius');
+    print('-' * 40);
 
-    stdout.write('Digite a temperatura: ');
-    String? tempStr = stdin.readLineSync();
+    stdout.write('Escolha o tipo (1 ou 2): ');
+    String? opcaoStr = stdin.readLineSync();
 
-    if (tempStr != null && tempStr.isNotEmpty) {
-      double temp = double.parse(tempStr);
-      double resultado;
+    if (opcaoStr != null && opcaoStr.isNotEmpty) {
+      int opcao = int.parse(opcaoStr);
 
-      switch (opcao) {
-        case 1:
+      stdout.write('Digite a temperatura: ');
+      String? tempStr = stdin.readLineSync();
 
-          resultado = (temp * 9 / 5) + 32;
-          print('Resultado: $temp°C = ${resultado.toStringAsFixed(2)}°F');
+      if (tempStr != null && tempStr.isNotEmpty) {
+        double temp = double.parse(tempStr);
+        double resultado;
 
-          print('-' * 40);
-          break;
+        switch (opcao) {
+          case 1:
 
-        case 2:
+            resultado = (temp * 9 / 5) + 32;
+            print('Resultado: $temp°C = ${resultado.toStringAsFixed(2)}°F');
 
-          resultado = (temp - 32) * 5 / 9;
-          print('Resultado: $temp°F = ${resultado.toStringAsFixed(2)}°C');
+            print('-' * 40);
+            break;
 
-          print('-' * 40);
-          break;
+          case 2:
 
-        default:
+            resultado = (temp - 32) * 5 / 9;
+            print('Resultado: $temp°F = ${resultado.toStringAsFixed(2)}°C');
 
-          print('-' * 40);
-          print('ERRO');
-          print('Escolha uma das opções!');
-          print('-' * 40);
+            print('-' * 40);
+            break;
+
+          default:
+
+            print('-' * 40);
+            print('ERRO');
+            print('Escolha uma das opções!');
+            print('-' * 40);
+        }
+      } else {
+        
+        print('-' * 40);
+        print('ERRO');
+        print('Nada foi impresso, Digite algo válido!');
+        print('-' * 40);
       }
     } else {
-      
-      print('-' * 40);
-      print('ERRO');
-      print('Nada foi impresso, Digite algo válido!');
-      print('-' * 40);
-    }
-  } else {
 
-      print('-' * 40);
-      print('ERRO');
-      print('Nada foi impresso, Digite algo válido!');
-      print('-' * 40);
+        print('-' * 40);
+        print('ERRO');
+        print('Nada foi impresso, Digite algo válido!');
+        print('-' * 40);
+    }
+
+    stdout.write('Deseja calcular outra média? (s/n): ');
+    String? resposta = stdin.readLineSync();
+
+    if (resposta == null || resposta.toLowerCase() != 's') {
+      print('Encerrando o programa...');
+      break;
+    }
   }
 }

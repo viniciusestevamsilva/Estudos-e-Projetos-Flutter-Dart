@@ -3,29 +3,41 @@ import 'dart:io';
 void main() {
 
   print('-' * 40);
+  print('N - Dobro positivos e Triplho negativo');
+  print('-' * 40);
 
-  stdout.write('Digite um número: ');
-  String? entrada = stdin.readLineSync();
+  while(true){
 
-  if (entrada != null && entrada.isNotEmpty) {
+    stdout.write('Digite um número: ');
+    String? entrada = stdin.readLineSync();
 
-    int? numero = int.tryParse(entrada);
+    if (entrada != null && entrada.isNotEmpty) {
 
-    if (numero != null) {
-      int resultado;
+      int? numero = int.tryParse(entrada);
 
-      if (numero > 0) {
-        resultado = numero * 2;
-        print('O número é positivo. O dobro de $numero é $resultado.');
+      if (numero != null) {
+        int resultado;
 
-      } else if (numero < 0) {
+        if (numero > 0) {
+          resultado = numero * 2;
+          print('O número é positivo. O dobro de $numero é $resultado.');
 
-        resultado = numero * 3;
-        print('O número é negativo. O triplo de $numero é $resultado.');
+        } else if (numero < 0) {
+
+          resultado = numero * 3;
+          print('O número é negativo. O triplo de $numero é $resultado.');
+
+        } else {
+
+          print('O número é zero. Resultado: 0');
+        }
 
       } else {
 
-        print('O número é zero. Resultado: 0');
+        print('-' * 40);
+        print('ERRO');
+        print('Nada foi impresso, Digite algo válido!');
+        print('-' * 40);
       }
 
     } else {
@@ -35,12 +47,13 @@ void main() {
       print('Nada foi impresso, Digite algo válido!');
       print('-' * 40);
     }
+    
+    stdout.write('Deseja calcular outra média? (s/n): ');
+    String? resposta = stdin.readLineSync();
 
-  } else {
-
-    print('-' * 40);
-    print('ERRO');
-    print('Nada foi impresso, Digite algo válido!');
-    print('-' * 40);
+    if (resposta == null || resposta.toLowerCase() != 's') {
+      print('Encerrando o programa...');
+      break;
+    }
   }
 }

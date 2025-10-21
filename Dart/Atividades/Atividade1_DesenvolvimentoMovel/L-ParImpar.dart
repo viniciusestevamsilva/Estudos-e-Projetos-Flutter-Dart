@@ -3,24 +3,36 @@ import 'dart:io';
 void main() {
 
   print('-' * 40);
+  print('L - Par e Impar');
+  print('-' * 40);
 
-  stdout.write('Digite um número: ');
+  while(true){
 
-  String? entrada = stdin.readLineSync();
+    stdout.write('Digite um número: ');
 
-  if (entrada != null && entrada.isNotEmpty) {
+    String? entrada = stdin.readLineSync();
 
-    int? numero = int.tryParse(entrada);
+    if (entrada != null && entrada.isNotEmpty) {
 
-    if (numero != null) {
+      int? numero = int.tryParse(entrada);
 
-      if (numero % 2 == 0) {
+      if (numero != null) {
 
-        print('O número $numero é PAR.');
+        if (numero % 2 == 0) {
+
+          print('O número $numero é PAR.');
+        } else {
+
+          print('O número $numero é ÍMPAR.');
+        }
       } else {
 
-        print('O número $numero é ÍMPAR.');
+        print('-' * 40);
+        print('ERRO');
+        print('Nada foi impresso, Digite algo válido!');
+        print('-' * 40);
       }
+
     } else {
 
       print('-' * 40);
@@ -28,12 +40,13 @@ void main() {
       print('Nada foi impresso, Digite algo válido!');
       print('-' * 40);
     }
+    
+    stdout.write('Deseja calcular outra média? (s/n): ');
+    String? resposta = stdin.readLineSync();
 
-  } else {
-
-    print('-' * 40);
-    print('ERRO');
-    print('Nada foi impresso, Digite algo válido!');
-    print('-' * 40);
+    if (resposta == null || resposta.toLowerCase() != 's') {
+      print('Encerrando o programa...');
+      break;
+    }
   }
 }
