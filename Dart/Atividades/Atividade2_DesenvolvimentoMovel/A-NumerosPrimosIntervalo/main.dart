@@ -2,9 +2,12 @@ import 'dart:io';
 
 void main() {
 
-  print('°~*' * 60);
+
+  print('__' * 60);
+  print('Oque é pra fazer? :  Faça um programa que receba dois números inteiros A e B \n e imprima todos os números primos entre A e B (inclusive).');
+  print('__' * 60);
   print('Números primos no intervalo');
-  print('°~*' * 60);
+  print('__' * 60);
 
   while(true) {
 
@@ -14,7 +17,7 @@ void main() {
     stdout.write('Digite o 2° valor(B): ');
     String? valor2 = stdin.readLineSync();
 
-    print('°~*' * 60);
+    print('__' * 60);
     print('');
 
     if ( valor != null && valor.isNotEmpty && valor2 != null && valor2.isNotEmpty) {
@@ -45,33 +48,37 @@ void main() {
         }
 
         print('');
-        print('°~*' * 60);
+        print('__' * 60);
         print('');
 
       } else {
 
-        print('°~*' * 60);
+        print('__' * 60);
         print('ERRO');
         print('Nada foi impresso, Digite algo válido!');
-        print('°~*' * 60);
+        print('__' * 60);
         print('');
         print('');
       }
 
     } else {
 
-      print('°~*' * 60);
+      print('_' * 60);
       print('Digite algo válido para continuar.');
-      print('°~*' * 60);
+      print('__' * 60);
       print('');
       print('');
     }
 
-    stdout.write('Você deseja continuar?(s/n): ');
+    print(' ');
+    print('__' * 60);
+    stdout.write('Você deseja continuar? (s/n): ');
     String? escolha = stdin.readLineSync();
 
     if ( escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao'){
 
+      print('');
+      print('');
       print('Encerrando o programa...');
       print('');
       print('');
@@ -82,9 +89,9 @@ void main() {
       
     } else{
 
-      print('°~*' * 60);
+      print('__' * 60);
       print('Escolha uma das opções a cima.');
-      print('°~*' * 60);
+      print('__' * 60);
       print('');
     }
 

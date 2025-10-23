@@ -1,66 +1,60 @@
 import 'dart:io';
+import 'dart:math';
 
 void main() {
 
-
   print('__' * 60);
-  print('Oque é pra fazer? : Faça um programa que leia um número inteiro positivo e calcule seu fatorial usando um loop.');
+  print('Oque é pra fazer? :Faça um programa que receba um número inteiro N e imprima as \n potências de 2 de 0 até N (2⁰, 2¹, ..., 2ᴺ).');
   print('__' * 60);
-  print('Fatorial com repetição');
+  print('Sequência de potências');
   print('__' * 60);
+  
+  while(true) {
 
-  while (true) {
+    stdout.write('Digite seu número: ');
+    String? numero = stdin.readLineSync();
 
-    stdout.write('Digite o Fator: ');
-    String? valor = stdin.readLineSync();
+    if ( numero == null || numero.isEmpty){
 
-    if (valor == null || valor.isEmpty) {
-
-      print('');
-      print('');
-      print('__' * 60);
-      print('ERRO');
-       print('__' * 60);
-      print('Entrada inválida. Tente novamente.');
-      print('__' * 60);
-      print('');
-      print('');
-      continue;
-    }
-
-    int? fator = int.tryParse(valor);
-    if (fator == null || fator < 0) {
-
-      print('');
-      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número inteiro positivo.');
+      print('Digite um número válido.');
       print('__' * 60);
-      print('');
-      print('');
       continue;
     }
 
-    int fatorial = 1;
-    int i = 1;
+    int? num = int.tryParse(numero);
 
-    while (i <= fator) {
-      fatorial = fatorial * i;
-      i++;
+    if ( num == null ){
+
+      print('__' * 60);
+      print('ERRO');
+      print('__' * 60);
+      print('Digite um número válido.');
+      print('__' * 60);
+      continue;
     }
 
     print('__' * 60);
-    print('O fatorial de $fator é $fatorial');
+    print('Potências de 2 de 0 até $num:');
     print('__' * 60);
+    print(' ');
+    
+    for (int i = 0; i <= num; i++) {
+
+      int potencia = pow(2, i).toInt();
+      print('2^$i = $potencia');
+    }
 
     print(' ');
     print('__' * 60);
     stdout.write('Você deseja continuar? (s/n): ');
+
     String? escolha = stdin.readLineSync();
 
     if (escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao') {
+
       print('');
       print('');
       print('Encerrando o programa...');

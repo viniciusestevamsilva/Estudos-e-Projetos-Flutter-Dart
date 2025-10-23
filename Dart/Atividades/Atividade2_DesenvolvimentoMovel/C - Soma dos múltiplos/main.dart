@@ -2,57 +2,61 @@ import 'dart:io';
 
 void main() {
 
-
   print('__' * 60);
-  print('Oque é pra fazer? : Faça um programa que leia um número inteiro positivo e calcule seu fatorial usando um loop.');
+  print('Oque é pra fazer? : Faça um programa que receba um número inteiro N \n e calcule a soma de todos os múltiplos de 3 ou 5 menores que N.');
   print('__' * 60);
-  print('Fatorial com repetição');
+  print('Soma dos múltiplos');
   print('__' * 60);
 
-  while (true) {
+  while(true){
 
-    stdout.write('Digite o Fator: ');
+    stdout.write('Digite seu valor: ');
     String? valor = stdin.readLineSync();
 
     if (valor == null || valor.isEmpty) {
 
-      print('');
-      print('');
-      print('__' * 60);
-      print('ERRO');
-       print('__' * 60);
-      print('Entrada inválida. Tente novamente.');
-      print('__' * 60);
-      print('');
-      print('');
-      continue;
-    }
-
-    int? fator = int.tryParse(valor);
-    if (fator == null || fator < 0) {
-
-      print('');
-      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número inteiro positivo.');
+      print('Digite apenas números inteiros positivos.');
       print('__' * 60);
-      print('');
-      print('');
       continue;
     }
 
-    int fatorial = 1;
-    int i = 1;
+    int? n = int.tryParse(valor);
+    if (n == null || n <= 0) {
 
-    while (i <= fator) {
-      fatorial = fatorial * i;
-      i++;
+      print('__' * 60);
+      print('ERRO');
+      print('__' * 60);
+      print('Digite um número inteiro positivo válido.');
+      print('__' * 60);
+      continue;
+    }
+
+    int soma = 0;
+
+    for (int i = 1; i < n; i++) {
+      
+      if (i % 3 == 0 && i % 5 == 0) {
+
+        print('$i é múltiplo de 3 e 5');
+        soma += i;
+
+      } else if (i % 3 == 0) {
+
+        print('$i é múltiplo de 3');
+        soma += i;
+
+      } else if (i % 5 == 0) {
+
+        print('$i é múltiplo de 5');
+        soma += i;
+      }
     }
 
     print('__' * 60);
-    print('O fatorial de $fator é $fatorial');
+    print('A soma de todos os múltiplos de 3 ou 5 menores que $n é $soma');
     print('__' * 60);
 
     print(' ');
@@ -61,6 +65,7 @@ void main() {
     String? escolha = stdin.readLineSync();
 
     if (escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao') {
+
       print('');
       print('');
       print('Encerrando o programa...');
@@ -84,4 +89,5 @@ void main() {
       print('');
     }
   }
+
 }
