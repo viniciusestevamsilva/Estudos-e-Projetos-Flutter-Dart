@@ -54,6 +54,7 @@ void main() {
     String? escolha = stdin.readLineSync();
 
     if (escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao') {
+      stdout.write('\x1B[2J\x1B[0;0H');
 
       print('');
       print('');
@@ -63,6 +64,7 @@ void main() {
       break;
 
     } else if (escolha.toLowerCase() == 's' || escolha.toLowerCase() == 'sim') {
+      stdout.write('\x1B[2J\x1B[0;0H');
       continue;
 
     } else {
@@ -76,6 +78,7 @@ void main() {
       print('__' * 60);
       print('');
       print('');
+      continue;
     }
   }
 }

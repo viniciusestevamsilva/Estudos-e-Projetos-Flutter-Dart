@@ -3,61 +3,55 @@ import 'dart:io';
 void main() {
 
   print('__' * 60);
-  print('Oque é pra fazer? : Faça um programa que receba um número inteiro N \n e calcule a soma de todos os múltiplos de 3 ou 5 menores que N.');
+  print('Oque é pra fazer? : Faça um programa que receba um número inteiro positivo e faça uma contagem regressiva até zero, imprimindo cada número.');
   print('__' * 60);
-  print('Soma dos múltiplos');
+  print('Contagem regressiva');
   print('__' * 60);
 
-  while(true){
+  while(true) {
 
-    stdout.write('Digite seu valor: ');
-    String? valor = stdin.readLineSync();
+    stdout.write('');
+    String? entrada = stdin.readLineSync();
+    
+    if (entrada == null || entrada.isEmpty){
 
-    if (valor == null || valor.isEmpty) {
-
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite apenas números inteiros positivos.');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;      
     }
 
-    int? n = int.tryParse(valor);
-    if (n == null || n <= 0) {
+    int? valor = int.tryParse(entrada);
 
+    if (valor == null){
+
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número inteiro positivo válido.');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;      
     }
 
-    int soma = 0;
+    print('');
+    print('__' * 60);
+    print('Contagem regressiva iniciando a partir de $valor:');
+    print('__' * 60);
 
-    for (int i = 1; i < n; i++) {
-      
-      if (i % 3 == 0 && i % 5 == 0) {
-
-        print('$i é múltiplo de 3 e 5');
-        soma += i;
-
-      } else if (i % 3 == 0) {
-
-        print('$i é múltiplo de 3');
-        soma += i;
-
-      } else if (i % 5 == 0) {
-
-        print('$i é múltiplo de 5');
-        soma += i;
-      }
+    for (int i = valor; i >= 0; i--) {
+      print(i);
     }
 
     print('__' * 60);
-    print('A soma de todos os múltiplos de 3 ou 5 menores que $n é $soma');
+    print('Fim da contagem!');
     print('__' * 60);
+
 
     print(' ');
     print('__' * 60);

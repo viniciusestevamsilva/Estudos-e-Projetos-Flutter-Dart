@@ -2,59 +2,60 @@ import 'dart:io';
 
 void main() {
 
-
   print('__' * 60);
-  print('Oque é pra fazer? : Faça um programa que leia um número inteiro positivo e calcule seu fatorial usando um loop.');
+  print('Oque é pra fazer? : Faça um programa que simule o resfriamento de um líquido a partir de uma temperatura inicial até atingir a temperatura ambiente (25°C). \n A cada segundo, a temperatura diminui 2%. Imprima a temperatura a cada segundo.');
   print('__' * 60);
-  print('Fatorial com repetição');
+  print(' Determinação do maior divisor comum (MDC)');
   print('__' * 60);
 
-  while (true) {
+  while(true) {
 
-    stdout.write('Digite o Fator: ');
-    String? valor = stdin.readLineSync();
+    stdout.write('Digite a temperatura inicial do líquido (em °C): ');
+    String? entrada = stdin.readLineSync();
 
-    if (valor == null || valor.isEmpty) {
+    if (entrada == null || entrada.isEmpty) {
 
-      print('');
-      print('');
-      print('__' * 60);
-      print('ERRO');
-       print('__' * 60);
-      print('Entrada inválida. Tente novamente.');
-      print('__' * 60);
-      print('');
-      print('');
-      continue;
-    }
-
-    int? fator = int.tryParse(valor);
-    if (fator == null || fator < 0) {
-
-      print('');
       print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número inteiro positivo.');
+      print('Digite um número válido.');
       print('__' * 60);
       print('');
+      continue;  
+    }
+
+    double? temp = double.tryParse(entrada);
+    if (temp == null) {
+
       print('');
-      continue;
-    }
-
-    int fatorial = 1;
-    int i = 1;
-
-    while (i <= fator) {
-      fatorial = fatorial * i;
-      i++;
+      print('__' * 60);
+      print('ERRO');
+      print('__' * 60);
+      print('Digite um número válido.');
+      print('__' * 60);
+      print('');
+      continue;  
     }
 
     print('__' * 60);
-    print('O fatorial de $fator é $fatorial');
+    print('Iniciando resfriamento... Temperatura inicial: ${temp.toStringAsFixed(2)} °C');
     print('__' * 60);
 
+    int segundos = 0;
+    
+    while (temp! > 25) {
+      segundos++;
+      temp = temp * 0.98; 
+      print('Após $segundos s: ${temp.toStringAsFixed(2)} °C');
+  
+    }
+
+    print('__' * 60);
+    print('Temperatura final atingida: ${temp.toStringAsFixed(2)} °C');
+    print('Tempo total: $segundos segundos.');
+    print('__' * 60);
+  
     print(' ');
     print('__' * 60);
     stdout.write('Você deseja continuar? (s/n): ');

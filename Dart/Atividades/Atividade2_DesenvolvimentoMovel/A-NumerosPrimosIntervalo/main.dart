@@ -73,9 +73,11 @@ void main() {
     print(' ');
     print('__' * 60);
     stdout.write('Você deseja continuar? (s/n): ');
+
     String? escolha = stdin.readLineSync();
 
-    if ( escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao'){
+    if (escolha == null || escolha.toLowerCase() == 'n' || escolha.toLowerCase() == 'nao') {
+      stdout.write('\x1B[2J\x1B[0;0H');
 
       print('');
       print('');
@@ -84,16 +86,22 @@ void main() {
       print('');
       break;
 
-    } else if ( escolha.toLowerCase() == 's' || escolha.toLowerCase() == 'sim') {
+    } else if (escolha.toLowerCase() == 's' || escolha.toLowerCase() == 'sim') {
+      stdout.write('\x1B[2J\x1B[0;0H');
       continue;
-      
-    } else{
 
+    } else {
+
+      print('');
+      print('');
       print('__' * 60);
-      print('Escolha uma das opções a cima.');
+      print('ERRO');
+      print('__' * 60);
+      print('Escolha uma das opções acima.');
       print('__' * 60);
       print('');
-    }
-
+      print('');
+      continue;
+      }
   }
 }

@@ -34,15 +34,15 @@
 
 [✔️] ➖ G - Sequência de potências:Faça um programa que receba um número inteiro N e imprima as potências de 2 de 0 até N (2⁰, 2¹, ..., 2ᴺ).
 
-[〰️] ➖ H - Cálculo de velocidade média: Faça um programa que receba as distâncias percorridas a cada intervalo de tempo e calcule a velocidade média total do percurso.
+[✔️] ➖ H - Cálculo de velocidade média: Faça um programa que receba as distâncias percorridas a cada intervalo de tempo e calcule a velocidade média total do percurso.
 
-[❌] ➖ I - Classificação de ângulos: Faça um programa que receba um ângulo em graus e classifique-o como agudo (<90°), reto (90°), obtuso (>90° e <180°) ou rente (180°).
+[✔️] ➖ I - Classificação de ângulos: Faça um programa que receba um ângulo em graus e classifique-o como agudo (<90°), reto (90°), obtuso (>90° e <180°) ou rente (180°).
 
-[❌] ➖ J - Contagem regressiva: Faça um programa que receba um número inteiro positivo e faça uma contagem regressiva até zero, imprimindo cada número.
+[✔️] ➖ J - Contagem regressiva: Faça um programa que receba um número inteiro positivo e faça uma contagem regressiva até zero, imprimindo cada número.
 
-[❌] ➖ K - Determinação do maior divisor comum (MDC): Faça um programa que receba dois números inteiros e calcule o MDC usando o algoritmo de Euclides com repetição.
+[✔️] ➖ K - Determinação do maior divisor comum (MDC): Faça um programa que receba dois números inteiros e calcule o MDC usando o algoritmo de Euclides com repetição.
 
-[❌] ➖ L - Resfriamento de um líquido: Faça um programa que simule o resfriamento de um líquido a partir de uma temperatura inicial até atingir a temperatura ambiente (25°C). A cada segundo, a temperatura diminui 2%. Imprima a temperatura a cada segundo.
+[✔️] ➖ L - Resfriamento de um líquido: Faça um programa que simule o resfriamento de um líquido a partir de uma temperatura inicial até atingir a temperatura ambiente (25°C). A cada segundo, a temperatura diminui 2%. Imprima a temperatura a cada segundo.
 
 ```
 

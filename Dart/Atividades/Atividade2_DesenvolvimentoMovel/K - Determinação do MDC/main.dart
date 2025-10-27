@@ -2,77 +2,82 @@ import 'dart:io';
 
 void main() {
 
-    
   print('__' * 60);
-  print('Oque é pra fazer? :  Faça um programa que receba um ano e verifique se ele é bissexto, exibindo a resposta.');
+  print('Oque é pra fazer? : Faça um programa que receba dois números inteiros e calcule o MDC usando o algoritmo de Euclides com repetição.');
   print('__' * 60);
-  print('Tabela de velocidades');
+  print(' Determinação do maior divisor comum (MDC)');
   print('__' * 60);
 
-  while(true){
+  while(true) {
 
-    stdout.write('Digite a aceleração (m/s²): ');
-    String? aceleracao = stdin.readLineSync();
+   stdout.write('Digite o primeiro número inteiro: ');
+    String? entrada1 = stdin.readLineSync();
 
-    if (aceleracao == null || aceleracao.isEmpty) {
+    if (entrada1 == null || entrada1.isEmpty) {
 
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número válido para a aceleração.');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;  
     }
 
-    double? acel = double.tryParse(aceleracao);
-    
-    if (acel == null || acel  <= 0) {
+    int? valora = int.tryParse(entrada1);
+    if (valora == null) {
 
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número válido para a aceleração.E Maior que 0');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;  
     }
 
-    stdout.write('Digite o tempo total (em segundos): ');
-    String? tempo = stdin.readLineSync();
+    stdout.write('Digite o segundo número inteiro: ');
+    String? entrada2 = stdin.readLineSync();
 
-    if (tempo == null || tempo == 0) {
+    if (entrada2 == null || entrada2.isEmpty) {
 
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um tempo inteiro positivo.E Maior que 0');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;  
     }
 
-    int? temp = int.tryParse(tempo);
+    int? valorb = int.tryParse(entrada2);
+    if (valorb == null) {
 
-    if (temp == null || temp == 0) {
-
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um tempo Maior que 0');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
+      print('');
+      continue;  
     }
 
-    print('__' * 60);
-    print('Tempo(s) | Velocidade(m/s)');
-    print('__' * 60);
+    int a = valora;
+    int b = valorb;
 
-    for (int i = 1; i <= temp; i++) {
-      double veloc = acel * i;
-
-      print('${i.toStringAsFixed(2)} | ${veloc.toStringAsFixed(2)}');
-
+    while (b != 0) {
+      int resto = a % b;
+      a = b;
+      b = resto;
     }
-    print('__' * 60);
-    print(' ');
+
+    print('\n' + '__' * 60);
+    print('O MDC dos números é: $a');
+    print('__' * 60 + '\n');
 
     print(' ');
     print('__' * 60);

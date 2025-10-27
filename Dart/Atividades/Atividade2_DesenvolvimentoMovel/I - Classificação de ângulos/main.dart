@@ -3,63 +3,59 @@ import 'dart:io';
 void main() {
 
   print('__' * 60);
-  print('Oque é pra fazer? : Faça um programa que receba um número inteiro N \n e calcule a soma de todos os múltiplos de 3 ou 5 menores que N.');
+  print('Oque é pra fazer? : Faça um programa que receba um ângulo em graus e classifique-o como agudo (<90°), reto (90°), obtuso (>90° e <180°) ou rente (180°).');
   print('__' * 60);
-  print('Soma dos múltiplos');
+  print('Classificação de ângulos');
   print('__' * 60);
 
-  while(true){
+  while(true) {
 
-    stdout.write('Digite seu valor: ');
-    String? valor = stdin.readLineSync();
+    stdout.write('Digite seu angulo: ');
+    String? entrada = stdin.readLineSync();
 
-    if (valor == null || valor.isEmpty) {
+    if (entrada == null || entrada.isEmpty){
 
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite apenas números inteiros positivos.');
+      print('Digite um número válido.');
       print('__' * 60);
+      print('');
       continue;
     }
 
-    int? n = int.tryParse(valor);
-    if (n == null || n <= 0) {
+    double? angulo = double.tryParse(entrada);
 
+    if (angulo == null || entrada.isEmpty){
+
+      print('');
       print('__' * 60);
       print('ERRO');
       print('__' * 60);
-      print('Digite um número inteiro positivo válido.');
+      print('Digite um número válido.');
       print('__' * 60);
-      continue;
-    }
-
-    int soma = 0;
-
-    for (int i = 1; i < n; i++) {
-      
-      if (i % 3 == 0 && i % 5 == 0) {
-
-        print('$i é múltiplo de 3 e 5');
-        soma += i;
-
-      } else if (i % 3 == 0) {
-
-        print('$i é múltiplo de 3');
-        soma += i;
-
-      } else if (i % 5 == 0) {
-
-        print('$i é múltiplo de 5');
-        soma += i;
-      }
+      print('');
+      continue;      
     }
 
     print('__' * 60);
-    print('A soma de todos os múltiplos de 3 ou 5 menores que $n é $soma');
+    if (angulo < 90) {
+      print('O ângulo de $angulo° é **AGUDO**.');
+    } else if (angulo == 90) {
+      print('O ângulo de $angulo° é **RETO**.');
+    } else if (angulo > 90 && angulo < 180) {
+      print('O ângulo de $angulo° é **OBTUSO**.');
+    } else if (angulo == 180) {
+      print('O ângulo de $angulo° é **RASO**.');
+    } else {
+      print('O ângulo de $angulo° está fora do intervalo esperado (0° a 180°).');
+    }
     print('__' * 60);
+    print('');
 
-    print(' ');
+
+print(' ');
     print('__' * 60);
     stdout.write('Você deseja continuar? (s/n): ');
 
