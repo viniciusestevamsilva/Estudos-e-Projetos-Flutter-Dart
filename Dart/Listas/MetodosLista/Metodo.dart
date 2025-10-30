@@ -56,4 +56,41 @@ void main() {
   print(listaVogais);
   print('A 1ª ocorrência da vogal o : índice ${listaVogais.indexOf('i')}');
   print('-' * 70);
+
+  // lastIndexOf: retorna o índice do último elemetno encontrado na lista.
+  List<String> listaCarros = ['Fusca', 'Gol', 'Ferrari', 'Gol'];
+  print(listaCarros);
+  print('A úçltima ocorrência do Gol: índice ${listaCarros.lastIndexOf('Gol')}');
+  print('-' * 70);
+
+  // sublist: retrona uma sublista a partir de um índice
+  // inicial e umm final (opcional). Final 1
+  List<int> lista = [1, 2, 3, 4, 5];
+  print('Lista original: $lista');
+  print('Sublista gerada: ${lista.sublist(1, 3)}');
+  print('-' * 70);
+
+  // sort: ordena os elemento da lista.
+  List<String> listaVogais2 = ['u', 'a', 'o', 'i', 'e'];
+  print('Lista original: $listaVogais2');
+
+  listaVogais2.sort();
+  print('Lista ordenada: $listaVogais2');
+  print('-' * 70);
+
+  // reversed: retorn auma nova lista com os elementos em ordem reversa
+  List<int> listaNumeros2 = [1, 2, 3, 4, 5, 6];
+  print('Lista original: $listaNumeros2');
+
+  var listaReversa = listaNumeros2.reversed.toList();
+  print('Lista embaralhada: $listaReversa');
+  print('-' * 70);
+
+  // shuffle: embaralha os elementos da lista
+  List<String> listaVerduras = ['Couve', 'Serraia', 'Alface', 'Rúcula'];
+  print('Lista original: $listaVerduras');
+
+  listaVerduras.shuffle();
+  print('Lista embaralhada: $listaVerduras');
+  print('-' * 70);
 }

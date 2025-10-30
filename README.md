@@ -39,7 +39,7 @@ Este repósitorio será de usos para que eu aplique, e estude minhas habilidades
 
 ✔️Funções com String ➖ (29/10/2025)
 
-✔️ Lista ➖ (29/10/2025)
+✔️ Lista ➖ (30/10/2025)
 
 <br>
 
