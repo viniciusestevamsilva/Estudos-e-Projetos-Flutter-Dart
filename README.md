@@ -33,7 +33,13 @@ Este repósitorio será de usos para que eu aplique, e estude minhas habilidades
 
 ✔️Condicional Switch case ➖ (01/10/2025)
 
-❌Desenvolvimento Móvel: Atividade 01
+✔️Desenvolvimento Móvel: Atividade 01 ➖ (17/10/2025)
+
+✔️Desenvolvimento Móvel: Atividade 02 ➖ (24/10/2025)
+
+✔️Funções com String ➖ (29/10/2025)
+
+✔️ Lista ➖ (29/10/2025)
 
 <br>
 
