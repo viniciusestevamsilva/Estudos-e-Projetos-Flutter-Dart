@@ -15,6 +15,8 @@
 
 💠 Desenvolvimento Móvel: Atividade 02 (Tentem produzir códigos com entrada de dados e validações com IF)
 
+💠 Exercício 03: Listas
+
 
 ```
 
