@@ -35,10 +35,10 @@ Dada uma lista de strings, crie uma única string (frase) concatenando apenas as
 [✔️] ➖ 8. Transformação de Lista de Palavras em Lista de Comprimentos
 Dada uma lista de palavras, crie uma nova lista de inteiros onde cada inteiro representa o número de caracteres da palavra correspondente na lista original.
 
-[〰️] ➖ 9. Filtragem de Emails Válidos (Regra Simples)
+[✔️] ➖ 9. Filtragem de Emails Válidos (Regra Simples)
 Dada uma lista de strings que supostamente são endereços de email, filtre e colete em uma nova lista apenas os emails que contêm exatamente um caractere '@' e terminam com ".com".
 
-[❌] ➖ 10. Reversão Manual da Ordem dos Elementos
+[✔️] ➖ 10. Reversão Manual da Ordem dos Elementos
 Dada uma lista de strings, crie uma nova lista que contenha os mesmos elementos, mas na ordem inversa da lista original. O uso de List.reversed é permitido para fins de comparação, mas a implementação principal deve usar uma estrutura de repetição (for ou while).
 
  IGNORAR ---------------------------------------
@@ -60,7 +60,7 @@ Dada uma lista de Maps, onde cada Map representa uma tarefa com a chave "status"
 
  IGNORAR ---------------------------------------
 
-[❌] ➖ 16. Interseção de Duas Listas
+[〰️] ➖ 16. Interseção de Duas Listas
 Dadas duas listas de inteiros, crie uma nova lista contendo apenas os elementos que estão presentes em ambas as listas (a interseção).
 
 [❌] ➖ 17. Normalização e Classificação de Dados

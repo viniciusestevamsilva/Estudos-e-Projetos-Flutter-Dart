@@ -7,14 +7,14 @@ void main() {
   print('__' * 60);
 
   print('');
-  List<String> ListaEmails = [''];
+  List<String> ListaEmails = ['jorgimmaia@gmail.com','flavimdopneu@gmail','teste@@hotmail.com','ana@empresa.com','maria@empresa.org', 'pedrinmatadorfgmail'];
 
-  List<String> ListaFiltrada = [''];
+  List<String> ListaFiltrada = [];
 
-  for ( var emails in ListaEmails) {
-
-    if (emails.endsWith('.com')){
-      ListaFiltrada.add(emails);
+    for (var email in ListaEmails) {
+    
+    if (email.split('@').length == 2 && email.endsWith('.com')) {
+      ListaFiltrada.add(email);
     }
   }
 
