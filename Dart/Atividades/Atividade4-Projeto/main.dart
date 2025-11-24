@@ -46,14 +46,19 @@ void main() {
       
 
       print('__' * 70);
-      print('\nCadastramento de Alunos e notas (Digite 0 para sair)');
+      print('\nCadastramento de Alunos e notas \n(Digite qualquer número para sair)');
       print('__' * 70);
       stdout.write('Digite o nome do aluno: ');
 
       String? nome = stdin.readLineSync();
 
-      if (nome == null || nome.isEmpty || double.tryParse(nome) != null) {
+      if (nome == null || nome.isEmpty) {
         print('\nERRO: Nome inválido! Não pode ser número.\n');
+        continue;
+      }
+
+      if (double.tryParse(nome) != null) {
+        print('\nVoltando pro menu inicial.\n');
         continue;
       }
       List<double> notas = [];
@@ -81,7 +86,6 @@ void main() {
       }
 
       double media = notas.reduce((a, b) => a + b) / notas.length;
-
 
       //  -------------------------------------- SITUAÇÃO DO ALUNO ---------------------------------------
       String situacao = '';
@@ -140,7 +144,6 @@ void main() {
         }
         print('');
       }
-
 
       //  -------------------------------------- EXIBINDO A SITUAÇÃO  ---------------------------------------
     }  else if (opcao.toUpperCase() == 'D') {
@@ -243,7 +246,6 @@ void main() {
 
         double media = novasNotas.reduce((a, b) => a + b) / novasNotas.length;
         alunoEncontrado.update('media', (_) => media);
-
       
         String situacao = '';
         if (media >= 7) {
