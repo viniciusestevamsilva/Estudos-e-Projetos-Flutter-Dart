@@ -1,7 +1,7 @@
-List<String> filtrarEmailsValidos(List<String> emails) {
-  return emails.where((email) =>
-      email.split('@').length == 2 && email.endsWith('.com')
-  ).toList();
+List<String> filtrarEmailsValidos({
+  required List<String> emails}) {
+    
+  return emails.where((email) =>email.split('@').length == 2 && email.endsWith('.com')).toList();
 }
 
 void main() {
@@ -18,7 +18,7 @@ void main() {
     'pedrinmatadorfgmail'
   ];
 
-  List<String> listaFiltrada = filtrarEmailsValidos(listaEmails);
+  List<String> listaFiltrada = filtrarEmailsValidos(emails: listaEmails);
 
   print('Lista original: $listaEmails');
   print('Lista filtrada: $listaFiltrada');

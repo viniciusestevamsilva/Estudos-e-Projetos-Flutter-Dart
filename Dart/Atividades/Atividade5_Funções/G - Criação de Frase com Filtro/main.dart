@@ -1,8 +1,12 @@
-List<String> filtrarPalavrasQueTerminamComR(List<String> lista) {
+List<String> filtrarPalavrasQueTerminamComR({
+  required List<String> lista}) {
+
   return lista.where((p) => p.toLowerCase().endsWith('r')).toList();
 }
 
-String criarFrase(List<String> palavras) {
+String criarFrase({
+  
+  required List<String> palavras}) {
   return palavras.join(' ');
 }
 
@@ -17,8 +21,10 @@ void main() {
     'Trabalhando', 'sol'
   ];
 
-  List<String> filtradas = filtrarPalavrasQueTerminamComR(listaFrases);
-  String fraseFinal = criarFrase(filtradas);
+  List<String> filtradas =
+      filtrarPalavrasQueTerminamComR(lista: listaFrases);
+
+  String fraseFinal = criarFrase(palavras: filtradas);
 
   print('Lista original: $listaFrases');
   print('Palavras filtradas: $filtradas');

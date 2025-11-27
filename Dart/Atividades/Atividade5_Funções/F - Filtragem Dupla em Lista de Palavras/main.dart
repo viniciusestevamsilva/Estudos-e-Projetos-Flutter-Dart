@@ -1,8 +1,8 @@
-List<String> filtrarPalavras(List<String> lista) {
+List<String> filtrarPalavras({
+  required List<String> lista}) {
+    
   return lista.where((p) =>
-      p.length > 5 &&
-      (p.startsWith('A') || p.startsWith('a'))
-  ).toList();
+      p.length > 5 &&(p.startsWith('A') || p.startsWith('a'))).toList();
 }
 
 void main() {
@@ -16,7 +16,7 @@ void main() {
     'Azulejo', 'Artes', 'arremedeus'
   ];
 
-  List<String> listaFiltrada = filtrarPalavras(listaPalavras);
+  List<String> listaFiltrada = filtrarPalavras(lista: listaPalavras);
 
   print('Lista original: $listaPalavras');
   print('Lista filtrada: $listaFiltrada');

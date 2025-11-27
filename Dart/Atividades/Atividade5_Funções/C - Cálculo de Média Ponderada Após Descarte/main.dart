@@ -1,5 +1,5 @@
-
-double calcularMediaSemMenor(List<double> notas) {
+double calcularMediaSemMenor({
+  required List<double> notas}) {
   List<double> copia = List.from(notas);
 
   double menor = copia.reduce((a, b) => a < b ? a : b);
@@ -24,7 +24,7 @@ void main() {
     String nome = aluno[0];
     List<double> listaNotas = List<double>.from(aluno[1]);
 
-    double media = calcularMediaSemMenor(listaNotas);
+    double media = calcularMediaSemMenor(notas: listaNotas);
 
     print('Aluno: $nome');
     print('Média (sem a menor nota): ${media.toStringAsFixed(2)}');

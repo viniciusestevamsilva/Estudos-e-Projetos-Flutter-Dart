@@ -1,8 +1,11 @@
-List<String> reverterLista(List<String> lista) {
+List<String> reverterLista({
+  required List<String> lista}) {
   List<String> invertida = [];
+
   for (int i = lista.length - 1; i >= 0; i--) {
     invertida.add(lista[i]);
   }
+  
   return invertida;
 }
 
@@ -12,7 +15,7 @@ void main() {
     'Flor', 'Colorindo', 'andando', 'sorrir', 'Trabalhando', 'sol'
   ];
 
-  List<String> listaInvertida = reverterLista(listaOriginal);
+  List<String> listaInvertida = reverterLista(lista: listaOriginal);
 
   print('Lista original: $listaOriginal');
   print('Lista invertida: $listaInvertida');

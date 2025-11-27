@@ -1,19 +1,28 @@
-int transformarNumero(int num) {
+int transformarNumero({
+  required int num}) {
+    
   return num % 2 == 0 ? num : num * 2;
 }
 
-List<int> transformarLista(List<int> lista) {
-  return lista.map(transformarNumero).toList();
+List<int> transformarLista({
+  required List<int> lista}) {
+
+  return lista.map((n) => transformarNumero(num: n)).toList();
 }
 
-Map<String, List<int>> separarParesImpares(List<int> lista) {
+Map<String, List<int>> separarParesImpares({
+  required List<int> lista}) {
+
   List<int> pares = [];
   List<int> impares = [];
 
   for (int num in lista) {
+
     if (num % 2 == 0) {
+
       pares.add(num);
     } else {
+
       impares.add(num);
     }
   }
@@ -31,9 +40,9 @@ void main() {
 
   List<int> numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  var separados = separarParesImpares(numeros);
+  var separados = separarParesImpares(lista: numeros);
 
-  List<int> listaTransformada = transformarLista(numeros);
+  List<int> listaTransformada = transformarLista(lista: numeros);
 
   print('Lista original: $numeros');
   print('Lista de Pares: ${separados['pares']}');

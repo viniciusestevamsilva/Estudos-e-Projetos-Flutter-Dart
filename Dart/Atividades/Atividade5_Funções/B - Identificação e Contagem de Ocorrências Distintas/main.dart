@@ -1,8 +1,10 @@
-Set<int> obterValoresUnicos(List<int> lista) {
+Set<int> obterValoresUnicos({
+  required List<int> lista}) {
   return lista.toSet();
 }
 
-int contarValoresUnicos(List<int> lista) {
+int contarValoresUnicos({
+  required List<int> lista}) {
   return lista.toSet().length;
 }
 
@@ -13,8 +15,8 @@ void main() {
 
   List<int> listaInteiros = [1, 12, 12, 31, 31, 13, 5, 4, 8, 91, 9, 7, 2, 6];
 
-  Set<int> valoresUnicos = obterValoresUnicos(listaInteiros);
-  int quantidadeUnicos = contarValoresUnicos(listaInteiros);
+  Set<int> valoresUnicos = obterValoresUnicos(lista: listaInteiros);
+  int quantidadeUnicos = contarValoresUnicos(lista: listaInteiros);
 
   print('Lista original: $listaInteiros');
   print('Valores únicos: $valoresUnicos');
