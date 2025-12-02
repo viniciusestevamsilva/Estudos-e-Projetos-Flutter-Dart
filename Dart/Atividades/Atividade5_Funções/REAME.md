@@ -41,19 +41,19 @@ Dada uma lista de strings que supostamente são endereços de email, filtre e co
 [✔️] ➖ 10. Reversão Manual da Ordem dos Elementos
 Dada uma lista de strings, crie uma nova lista que contenha os mesmos elementos, mas na ordem inversa da lista original. O uso de List.reversed é permitido para fins de comparação, mas a implementação principal deve usar uma estrutura de repetição (for ou while).  
 
-[〰️] ➖ 16. Interseção de Duas Listas
+[✔️] ➖ 16. Interseção de Duas Listas
 Dadas duas listas de inteiros, crie uma nova lista contendo apenas os elementos que estão presentes em ambas as listas (a interseção).
 
-[❌] ➖ 17. Normalização e Classificação de Dados
+[✔️] ➖ 17. Normalização e Classificação de Dados
 Dada uma lista de strings com valores duplicados e em ordem aleatória, o objetivo é primeiro remover todas as duplicatas e, em seguida, ordenar a lista resultante em ordem alfabética.
 
-[❌] ➖ 18. Checagem de Inclusão Total de Elementos
+[✔️] ➖ 18. Checagem de Inclusão Total de Elementos
 Dadas duas listas de inteiros, Lista Principal e Lista Subconjunto, verifique se todos os elementos da Lista Subconjunto estão presentes na Lista Principal. O resultado deve ser um valor booleano (true ou false).
 
-[❌] ➖ 19. Análise Estatística Básica em Lista Numérica
+[✔️] ➖ 19. Análise Estatística Básica em Lista Numérica
 Dada uma lista de números inteiros, calcule o desvio padrão amostral de forma simplificada. O processo envolve: 1) calcular a média; 2) calcular a diferença entre cada número e a média, elevando ao quadrado; 3) somar os resultados; 4) dividir pela contagem de elementos menos 1; 5) tirar a raiz quadrada do resultado.
 
-[❌] ➖ 20. Particionamento de Lista em Positivos e Não-Positivos
+[✔️] ➖ 20. Particionamento de Lista em Positivos e Não-Positivos
 Dada uma lista de números inteiros (positivos, negativos e zero), crie uma nova lista onde todos os números positivos aparecem primeiro, seguidos pelos números não-positivos (zero e negativos). A ordem relativa dentro de cada grupo deve ser mantida.
 
 ```
@@ -66,6 +66,6 @@ Dada uma lista de números inteiros (positivos, negativos e zero), crie uma nova
 
 ➖ **VScode**
 
-➖ **Dart**
+➖ **Dart**〰
 
 <br>
