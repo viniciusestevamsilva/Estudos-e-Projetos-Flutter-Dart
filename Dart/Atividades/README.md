@@ -17,8 +17,11 @@
 
 💠 Exercício 03: Listas
 
-💠 Desenvolvimento Móvel: Atividade 03 - Projeto 3 – Sistema de Notas e Desempenho Escolar
+💠 Desenvolvimento Móvel: Atividade 04 - Projeto 3 – Sistema de Notas e Desempenho Escolar
 
+💠Desenvolvimento Móvel: Atividade 05 - Refazer Atividade 3 mas com função
+
+💠Desenvolvimento Mobile: Orientação a Objetos - Atividade 01
 
 ```
 
