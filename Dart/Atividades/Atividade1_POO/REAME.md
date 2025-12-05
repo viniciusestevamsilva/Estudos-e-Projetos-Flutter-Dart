@@ -15,15 +15,15 @@
 
 [✔️] ➖ B - Faça um programa que peça um ano qualquer. O programa deverá calcular e imprimir a idade.
 
-[] ➖ C - Faça um programa que peça 4 notas com  entrada de dados. O programa deverá calcular a média das notas digitadas.
+[✔️] ➖ C - Faça um programa que peça 4 notas com  entrada de dados. O programa deverá calcular a média das notas digitadas.
 
-[] ➖ D - Faça um programa que receba e divida 2 números. A saída da divisão precisará ser formatada com 4 casas decimais.
+[✔️] ➖ D - Faça um programa que receba e divida 2 números. A saída da divisão precisará ser formatada com 4 casas decimais.
 
-[] ➖ E - Faça um programa que recebe um número inteiro e mostre o sucessor e antecessor.
+[✔️] ➖ E - Faça um programa que recebe um número inteiro e mostre o sucessor e antecessor.
 
-[] ➖ F - Faça um programa que receba um número qualquer e calcule o dobro e o triplo desse número.
+[✔️] ➖ F - Faça um programa que receba um número qualquer e calcule o dobro e o triplo desse número.
 
-[] ➖ G - Faça um programa para converter medidas
+[✔️] ➖ G - Faça um programa para converter medidas
 
 [] ➖ H - Faça um programa que receba um número inteiro. O programa deverá imprimir tabuada de multiplicação deste número.
 
