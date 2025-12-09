@@ -25,17 +25,17 @@
 
 [✔️] ➖ G - Faça um programa para converter medidas
 
-[] ➖ H - Faça um programa que receba um número inteiro. O programa deverá imprimir tabuada de multiplicação deste número.
+[✔️] ➖ H - Faça um programa que receba um número inteiro. O programa deverá imprimir tabuada de multiplicação deste número.
 
-[] ➖ I - Faça um programa que receba um valor em reais, depois calcule quantos euros, dólares e wons dariam para comprar com esse valor.
+[✔️] ➖ I - Faça um programa que receba um valor em reais, depois calcule quantos euros, dólares e wons dariam para comprar com esse valor.
 
-[] ➖ J - Faça um programa com entrada de dados para calcular a área de 4 objetos.
+[✔️] ➖ J - Faça um programa com entrada de dados para calcular a área de 4 objetos.
 
-[] ➖ K - Faça um programa para receber um número qualquer e informar na tela se é par ou ímpar.
+[✔️] ➖ K - Faça um programa para receber um número qualquer e informar na tela se é par ou ímpar.
 
-[] ➖ L - Faça um algoritmo que leia dois valores inteiros A e B. Se os valores forem iguais deverá somar os dois, caso contrário multiplique A por B. Ao final de qualquer um dos cálculos deve-se atribuir o resultado para uma variável C e mostrar seu conteúdo na tela. 
+[✔️] ➖ L - Faça um algoritmo que leia dois valores inteiros A e B. Se os valores forem iguais deverá somar os dois, caso contrário multiplique A por B. Ao final de qualquer um dos cálculos deve-se atribuir o resultado para uma variável C e mostrar seu conteúdo na tela. 
 
-[] ➖ M - Faça um programa para encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo, imprimindo o resultado. 
+[✔️] ➖ M - Faça um programa para encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo, imprimindo o resultado. 
 
 [] ➖ N - Faça um programa que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar, imprimir o resultado desta operação. 
 
@@ -46,7 +46,6 @@
 [] ➖ Q - Faça um programa para conversão de temperaturas (C => F  e F ⇒ C)
 
 [] ➖ R - Faça um programa para calcular juros.
-
 
 ```
 
