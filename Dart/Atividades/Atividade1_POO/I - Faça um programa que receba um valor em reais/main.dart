@@ -29,13 +29,13 @@ double lerDouble(String mensagem) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.trim().isEmpty) {
-      print("Entrada inválida! Digite um valor numérico.\n");
+      print("\nEntrada inválida! Digite um valor numérico.\n");
       continue;
     }
 
     double? numero = double.tryParse(entrada);
     if (numero == null) {
-      print("Valor inválido! Digite um número válido.\n");
+      print("\nValor inválido! Digite um número válido.\n");
     } else {
       return numero;
     }
@@ -43,8 +43,12 @@ double lerDouble(String mensagem) {
 }
 
 void main() {
+  print('__' * 70);
   double valor = lerDouble("Digite um valor em reais: ");
+  
 
   ConversorMoedas conversor = ConversorMoedas(valorReais: valor);
+  print("\n------ RESULTADO ------");
   conversor.converterMoedas();
+  print('__' * 70);
 }

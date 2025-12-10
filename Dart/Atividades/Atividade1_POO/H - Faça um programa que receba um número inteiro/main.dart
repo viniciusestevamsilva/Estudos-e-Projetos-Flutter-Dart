@@ -20,13 +20,13 @@ int lerInteiro(String mensagem) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.trim().isEmpty) {
-      print("Entrada inválida! Tente novamente.\n");
+      print("\nEntrada inválida! Tente novamente.\n");
       continue;
     }
 
     int? numero = int.tryParse(entrada);
     if (numero == null) {
-      print("Valor inválido! Digite um número inteiro.\n");
+      print("\nValor inválido! Digite um número inteiro.\n");
     } else {
       return numero;
     }

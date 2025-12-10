@@ -26,13 +26,13 @@ double lerDouble(String mensagem) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.isEmpty) {
-      print("Entrada inválida! Tente novamente.\n");
+      print("\nEntrada inválida! Tente novamente.\n");
       continue;
     }
 
     double? numero = double.tryParse(entrada);
     if (numero == null) {
-      print("Valor inválido! Digite um número válido.\n");
+      print("\nValor inválido! Digite um número válido.\n");
     } else {
       return numero;
     }
@@ -40,6 +40,7 @@ double lerDouble(String mensagem) {
 }
 
 void main() {
+  print('__' * 70);
   CalculadoraArea calc = CalculadoraArea();
 
   print("==== CÁLCULO DE ÁREAS ====\n");
@@ -63,4 +64,5 @@ void main() {
   print("Área do retângulo: ${areaR.toStringAsFixed(2)}");
   print("Área do triângulo: ${areaT.toStringAsFixed(2)}");
   print("Área do círculo: ${areaC.toStringAsFixed(2)}");
+  print('__' * 70);
 }

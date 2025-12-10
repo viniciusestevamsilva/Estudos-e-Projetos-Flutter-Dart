@@ -6,14 +6,14 @@ int lerInt(String texto) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.isEmpty) {
-      print("Entrada inválida! Digite um número inteiro.");
+      print("\nEntrada inválida! Digite um número inteiro.");
       continue;
     }
 
     int? numero = int.tryParse(entrada);
 
     if (numero == null) {
-      print("Valor inválido! Digite um número inteiro válido.");
+      print("\nValor inválido! Digite um número inteiro válido.");
     } else {
       return numero;
     }

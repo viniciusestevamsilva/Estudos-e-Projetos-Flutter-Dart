@@ -15,14 +15,14 @@ double lerDouble(String texto) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.isEmpty) {
-      print("Entrada inválida! Digite um número.");
+      print("\nEntrada inválida! Digite um número.");
       continue;
     }
 
     double? numero = double.tryParse(entrada);
 
     if (numero == null) {
-      print("Valor inválido! Digite um número válido.");
+      print("\nValor inválido! Digite um número válido.");
     } else {
       return numero;
     }

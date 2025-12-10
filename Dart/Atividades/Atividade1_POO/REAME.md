@@ -37,15 +37,15 @@
 
 [✔️] ➖ M - Faça um programa para encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo, imprimindo o resultado. 
 
-[] ➖ N - Faça um programa que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar, imprimir o resultado desta operação. 
+[✔️] ➖ N - Faça um programa que leia uma variável e some 5 caso seja par ou some 8 caso seja ímpar, imprimir o resultado desta operação. 
 
-[] ➖ O - Faça um programa que leia três valores inteiros e diferentes e mostre-os em ordem decrescente. 
+[✔️] ➖ O - Faça um programa que leia três valores inteiros e diferentes e mostre-os em ordem decrescente. 
 
-[] ➖ P - Faça um programa para calcular o IMC COMPLETO de uma pessoa.
+[✔️] ➖ P - Faça um programa para calcular o IMC COMPLETO de uma pessoa.
 
-[] ➖ Q - Faça um programa para conversão de temperaturas (C => F  e F ⇒ C)
+[✔️] ➖ Q - Faça um programa para conversão de temperaturas (C => F  e F ⇒ C)
 
-[] ➖ R - Faça um programa para calcular juros.
+[✔️] ➖ R - Faça um programa para calcular juros.
 
 ```
 

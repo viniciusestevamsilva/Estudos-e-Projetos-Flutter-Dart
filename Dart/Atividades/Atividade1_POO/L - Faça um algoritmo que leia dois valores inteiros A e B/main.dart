@@ -4,7 +4,9 @@ class Calculadora {
   int a;
   int b;
 
-  Calculadora({required this.a, required this.b});
+  Calculadora({
+    required this.a,
+    required this.b});
 
   int calcular({bool mostrarResultado = true}) {
     int c = (a == b) ? a + b : a * b;
@@ -23,13 +25,13 @@ int lerInteiro(String mensagem) {
     String? entrada = stdin.readLineSync();
 
     if (entrada == null || entrada.trim().isEmpty) {
-      print("Entrada inválida! Digite um número inteiro.\n");
+      print("\nEntrada inválida! Digite um número inteiro.\n");
       continue;
     }
 
     int? numero = int.tryParse(entrada);
     if (numero == null) {
-      print("Valor inválido! Digite um número inteiro.\n");
+      print("\nValor inválido! Digite um número inteiro.\n");
     } else {
       return numero;
     }
@@ -37,12 +39,15 @@ int lerInteiro(String mensagem) {
 }
 
 void main() {
+  print('__' * 70);
  
   int a = lerInteiro("Digite o valor de A: ");
   int b = lerInteiro("Digite o valor de B: ");
+  print("\n------ RESULTADO ------");
 
 
   Calculadora calc = Calculadora(a: a, b: b);
 
   calc.calcular();
+  print('__' * 70);
 }
